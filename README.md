@@ -36,8 +36,8 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/chanwinharold/intro-component-with-signup-form-master)
+- Live Site URL: [Live site URL here](https://intro-component-with-signup-form-master-khaki-beta.vercel.app/)
 
 ### Built with
 
