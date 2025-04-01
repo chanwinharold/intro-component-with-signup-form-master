@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 @theme base {
-/***************Colors**************/
+    /***************Colors**************/
 
-/*Primary*/
---color-customRed: hsl(0, 100%, 74%);
---color-customGreen: hsl(154, 59%, 51%);
+    /*Primary*/
+    --color-customRed: hsl(0, 100%, 74%);
+    --color-customGreen: hsl(154, 59%, 51%);
 
-/*Accent*/
---color-customBlue: hsl(248, 32%, 49%);
+    /*Accent*/
+    --color-customBlue: hsl(248, 32%, 49%);
 
-/*Neutral*/
---color-customDarkBlue: hsl(249, 10%, 26%);
---color-customGrayishBlue: hsl(246, 25%, 77%);
+    /*Neutral*/
+    --color-customDarkBlue: hsl(249, 10%, 26%);
+    --color-customGrayishBlue: hsl(246, 25%, 77%);
 
+/*    Spacing*/
+    --spacing-customPct: 15%;
 }
 
 @layer base {
@@ -26,10 +28,10 @@
         @apply max-sm:bg-[url("/images/bg-intro-mobile.png")] sm:bg-[url("/images/bg-intro-desktop.png")];
         @apply flex max-sm:flex-col justify-center items-center gap-10 py-10;
 
-        & > section {
+        header {
             animation: disappear-reappear-1 600ms backwards;
         }
-        & section + section {
+        main {
             @media screen and (width >= 40rem) {
                 animation: disappear-reappear-2 1000ms backwards 300ms;
             }

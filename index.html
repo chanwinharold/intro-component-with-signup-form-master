@@ -17,36 +17,36 @@
 </head>
 <body>
 
-<section class="basis-1/2 flex flex-col max-sm:text-center gap-5 text-white">
+<header class="basis-1/2 flex flex-col max-sm:text-center gap-5 text-white">
     <h1 class="sm:text-4xl sm:font-extrabold max-sm:text-2xl max-sm:font-bold">Learn to code by watching others</h1>
     <p>
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
         but understanding how developers think is invaluable.
     </p>
-</section>
+</header>
 
-<section class="basis-1/2 max-w-[100%] flex flex-col justify-between gap-5">
-    <div class="ombre bg-customBlue text-white sm:px-10 max-sm:px-5 py-5 text-center rounded-md">
+<main class="basis-1/2 max-w-[100%] flex flex-col justify-between gap-5">
+    <section class="ombre bg-customBlue text-white sm:px-10 max-sm:px-5 py-5 text-center rounded-md">
         <strong>Try it free 7 days</strong> then $20/mo. thereafter
-    </div>
+    </section>
     <form class="ombre bg-white rounded-md p-8 flex flex-col gap-5">
         <label class="relative">
-            <span class="absolute top-[18%] right-5"><img class="name" src="" alt=""></span>
-            <input type="text" name="name" placeholder="First Name" autocomplete="True">
+            <span class="absolute top-customPct right-5 name"></span>
+            <input type="text" name="name" placeholder="First Name" autofocus>
             <span></span>
         </label>
         <label class="relative">
-            <span class="absolute top-[18%] right-5"><img class="last_name" src="" alt=""></span>
-            <input type="text" name="last_name" placeholder="Last Name" autocomplete="True">
+            <span class="absolute top-customPct right-5 last_name"></span>
+            <input type="text" name="last_name" placeholder="Last Name">
             <span></span>
         </label>
         <label class="relative">
-            <span class="absolute top-[18%] right-5"><img class="email" src="" alt=""></span>
-            <input type="email" name="email" placeholder="Email Address" autocomplete="True">
+            <span class="absolute top-customPct right-5 email"></span>
+            <input type="email" name="email" placeholder="Email Address">
             <span></span>
         </label>
         <label class="relative">
-            <span class="absolute top-[18%] right-5"><img class="password" src="" alt=""></span>
+            <span class="absolute top-customPct right-5 password"></span>
             <input type="password" name="password" placeholder="Password">
             <span></span>
         </label>
@@ -54,7 +54,7 @@
         <button class="bg-customGreen py-3 text-white font-bold uppercase rounded-md hover:opacity-75 hover:cursor-pointer">Claim your free trial</button>
         <p class="text-xs text-center text-customDarkBlue">By clicking the button, you are agreeing to our <a class="text-red-500 font-bold hover:underline" href="#">Terms and Services</a></p>
     </form>
-</section>
+</main>
 
 </body>
 </html>

@@ -30,6 +30,7 @@
     --color-customBlue: hsl(248, 32%, 49%);
     --color-customDarkBlue: hsl(249, 10%, 26%);
     --color-customGrayishBlue: hsl(246, 25%, 77%);
+    --spacing-customPct: 15%;
   }
 }
 @layer base {
@@ -232,20 +233,11 @@
   .sticky {
     position: sticky;
   }
-  .top-\[12\.5\%\] {
-    top: 12.5%;
-  }
   .top-\[15\%\] {
     top: 15%;
   }
-  .top-\[18\%\] {
-    top: 18%;
-  }
-  .top-\[20\%\] {
-    top: 20%;
-  }
-  .top-\[25\%\] {
-    top: 25%;
+  .top-customPct {
+    top: var(--spacing-customPct);
   }
   .right-5 {
     right: calc(var(--spacing) * 5);
@@ -1935,10 +1927,10 @@
     @media (width < 40rem) {
       flex-direction: column;
     }
-    & > section {
+    header {
       animation: disappear-reappear-1 600ms backwards;
     }
-    & section + section {
+    main {
       @media screen and (width >= 40rem) {
         animation: disappear-reappear-2 1000ms backwards 300ms;
       }
